@@ -1,0 +1,9 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: AVIVS_POALIM_PROJECT_1Project
+  gitServerName: https://github.com/AvivSimDS/
+  gitUrl: https://github.com/AvivSimDS/AVIVS_POALIM_PROJECT_1Project
+  gitUsername: AvivSimDS
+  gitBranch: main

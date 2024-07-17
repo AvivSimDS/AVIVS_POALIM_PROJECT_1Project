@@ -7,8 +7,62 @@ packages:
   gitUrl: https://github.com/AvivSimDS/AVIVS_POALIM_PROJECT_1Project
   gitUsername: AvivSimDS
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: softwareag
 services:
 - serviceName: project.avivs_poalim_project_1.integrations:SampleFlowService2DB_1
   packages:
   - name: AVIVS_POALIM_PROJECT_1Project
     version: "1.0"
+- serviceName: project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:GCP_AVIVSIM_IT_DB_FS_1
+  packages:
+  - name: AVIVS_POALIM_PROJECT_1Project
+    version: "1.0"
+configurationVariables:
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionManagerSettings.poolable
+  : "true"
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionSettings.otherProperties
+  : loginTimeout=60;
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionSettings.dbType
+  : MySQL
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionManagerSettings.expireTimeout
+  : "5000"
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionSettings.serverName
+  : 34.89.242.253
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionSettings.trustStore
+  : ""
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionSettings.password
+  : "{AES}PTWq2hgg4RimZ8H0r79NmA=="
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionManagerSettings.blockingTimeout
+  : "5000"
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionManagerSettings.maximumPoolSize
+  : "20"
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionSettings.databaseName
+  : InvestmentsTransactions
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionSettings.driverType
+  : AvivSim_GCP_MySQL_8_0_15
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionSettings.networkProtocol
+  : ""
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionEnabled
+  : "false"
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionSettings.transactionType
+  : LOCAL_TRANSACTION
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionSettings.user
+  : avivsim-it-mysql-db-1
+  ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionSettings.keyStore
+  : ""

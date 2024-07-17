@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<FLOW VERSION="1.0" CLEANUP="false">
+<FLOW VERSION="3.0" CLEANUP="true">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
 
-<INVOKE NAME="Invoke predefined:com.wm.adapter.wmjdbc.JDBCAdapter" TIMEOUT="" SERVICE="project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.:" VALIDATE-IN="" VALIDATE-OUT="">
+<INVOKE NAME="Invoke predefined:com.wm.adapter.wmjdbc.JDBCAdapter" TIMEOUT="" SERVICE="project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:SumAllInvestmentsCommisions" VALIDATE-IN="" VALIDATE-OUT="">
   <COMMENT></COMMENT>
 </INVOKE>
 </FLOW>

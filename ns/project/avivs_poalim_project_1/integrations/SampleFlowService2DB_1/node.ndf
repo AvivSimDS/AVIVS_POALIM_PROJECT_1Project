@@ -45,9 +45,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">emea02user</value>
-    <value name="createdDate">1721061309739</value>
-    <value name="lastModifiedDate">1721061309739</value>
+    <value name="lastModifiedBy">emea02user</value>
+    <value name="lastModifiedDate">1721208768568</value>
     <value name="displayName">SampleFlowService2DB_1</value>
     <value name="description"></value>
     <array name="appList" type="record" depth="1">
@@ -62,7 +61,13 @@
         <value name="id">com.wm.adapter.wmjdbc.JDBCAdapter</value>
         <value name="name">Database</value>
         <value name="providerName">WmJDBCAdapter</value>
-        <null name="operation"/>
+        <record name="operation" javaclass="com.wm.util.Values">
+          <value name="operationName">SumAllInvestmentsCommisions</value>
+          <value name="isCustom">true</value>
+          <value name="operationType">actions</value>
+          <value name="connectionType">sagcloud</value>
+          <value name="projectName">project.avivs_poalim_project_1</value>
+        </record>
         <value name="appType">predefined</value>
         <Boolean name="hasAccount">true</Boolean>
         <Boolean name="allowCustomOperations">true</Boolean>
@@ -75,6 +80,29 @@
         <value name="packageName">WmJDBCAdapter</value>
         <value name="type">Adapters</value>
         <value name="version">1.0</value>
+        <record name="connection" javaclass="com.wm.util.Values">
+          <value name="connectionName">GCP_AVIVSIM_IT_DB_FS_1</value>
+          <value name="connectionType">sagcloud</value>
+          <null name="description"/>
+        </record>
+        <value name="connectionNSName">project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:GCP_AVIVSIM_IT_DB_FS_1</value>
+        <value name="connectionType">sagcloud</value>
+        <Boolean name="accountReferenceResolved">true</Boolean>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="inputMap" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
       </record>
     </record>
   </record>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<driverDetails>
+    <database>
+        <name>MySQL</name>
+        <driver inUse="false" exists="true">
+            <name>AvivSim_GCP_MySQL_8_0_15</name>
+            <path>drivers/MySQL/AvivSim_GCP_MySQL_8_0_15</path>
+        </driver>
+    </database>
+</driverDetails>

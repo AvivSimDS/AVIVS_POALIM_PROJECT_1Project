@@ -7,3 +7,8 @@ packages:
   gitUrl: https://github.com/AvivSimDS/AVIVS_POALIM_PROJECT_1Project
   gitUsername: AvivSimDS
   gitBranch: main
+services:
+- serviceName: project.avivs_poalim_project_1.integrations:SampleFlowService2DB_1
+  packages:
+  - name: AVIVS_POALIM_PROJECT_1Project
+    version: "1.0"

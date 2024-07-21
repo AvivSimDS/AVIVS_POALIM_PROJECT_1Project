@@ -19,6 +19,10 @@ services:
   packages:
   - name: AVIVS_POALIM_PROJECT_1Project
     version: "1.0"
+- serviceName: project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:SumAllInvestmentsCommisions
+  packages:
+  - name: AVIVS_POALIM_PROJECT_1Project
+    version: "1.0"
 configurationVariables:
   ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionManagerSettings.startupBackoffSecs
   : "10"
@@ -55,7 +59,7 @@ configurationVariables:
   ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionSettings.portNumber
   : "3306"
   ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionEnabled
-  : "false"
+  : "true"
   ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionManagerSettings.minimumPoolSize
   : "1"
   ? artConnection.AVIVS_POALIM_PROJECT_1Project.project.avivs_poalim_project_1.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.GCP_AVIVSIM_IT_DB_FS_1.connectionSettings.transactionType
